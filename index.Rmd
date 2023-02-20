@@ -55,22 +55,26 @@ Cutler, D. (2020, April 17). The World's Costliest Health Care. Harvard Magazine
 President, J. C. V., Cusick, J., President, V., Shepherd Director, M., Shepherd, M., Director, Director, E. L. A., Lofgren, E., Director, A., Rapfogel, N., Waldrop, T., Rosenthal, J., Manser, K., Williamson, M. W., Khattar, R., & Christianson, A. (2022, July 28). Health insurance costs are squeezing workers and employers. Center for American Progress. Retrieved February 3, 2023, from https://www.americanprogress.org/article/health-insurance-costs-are-squeezing-workers-and-employers/
 
 ### The Dataset
+We found the data in Kaggle. Here is the link: Medical Cost Personal Datasets | Kaggle. The data was collected by Miri Choi, a graduate student from the University of Seoul. All of the data is from the public domain, according to the introduction by Miri. The data was collected because the dataset in a book is not available online unless you buy the book and create an account.
 
-Where did you find the data? Please include a link to the data source  
-Who collected the data?  
-How was the data collected or generated?  
-Why was the data collected?  
-How many observations (rows) are in your data?  
-How many features (columns) are in the data?  
-What, if any, ethical questions or questions of power do you need to consider when working with this data?  
-What are possible limitations or problems with this data?   (at least 200 words)
+There are seven columns and 1338 rows in this dataset. The features include age, sex, body mass index, children, smoking, region, and charges. For the ethical question, we were considering the privacy of the data owners and the use of the data. We think working with this dataset will not affect any ethical problems. First, the data is collected from the public domain, and none of the personal information of each observation will be leaked. Second, our intention is to learn something from the dataset about medical costs and insurance by analyzing this dataset, and our outcome will be some useful conclusions related to insurance. Therefore, we don’t think there should be too much consideration about the ethical questions or questions of power.
+
+Possible limitations can be the medical histories of each observation. Without medical histories, it is hard to draw a clear analysis of the cost of insurance.
 
 ### Implications
 
 Assuming you answer your research questions, briefly describe the expected or possible implications for technologists, designers, and policymakers. (at least 150 words)
 
 ### Limitations & Challenges
-What challenges or limitations might you need to address with your project idea more broadly? Briefly discuss. (at least 150 words)
+One limitation is we don’t have specific economical data from certain regions (average medical cost level and average salary) which could influence the local insurance charges largely, so our conclusion on region questions may not be accurate and specific enough to make useful implications in the future.
+
+Another limitation can be the medical history as mentioned in the dataset. There might be more variables related to the insurance costs. If there can be more features included in this dataset, we might be able to get a more precise conclusion for the insurance cost and other medical information.
+
+One challenge for our group might be figuring out how to predict the cost of insurance by multiple variables. All of the variables might be associated with the insurance, but we haven’t learned to predict the charge by the regression line, so we will try to see if we can use the relation between columns to predict the insurance.
+
+### Acknowledgements
+
+We asked our assigned TA, Ishita, in the AH section, for help to be approved for our chosen topic, and thank you for explaining other details we should keep in mind in this proposal assignment.
 
 ### Summary Information
 
