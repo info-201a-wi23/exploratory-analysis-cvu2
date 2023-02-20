@@ -103,9 +103,13 @@ Fifth, defining by smoker, people who smoke have higher average insurance cost t
 
 ### Table
 
-Include a table of aggregate information
+``````{r, echo = FALSE, code = readLines("aggregate_table.R")}
+kable(region_table)
 
-Describe why you included the table and what information it reveals
+
+```
+This table compares the averages insurance costs by regions, and answer the question(What are the average charges in each region?) we listed above.
+The table is sorted by average charges(decreasing order), and it shows region(southeast) has the highest average insurance charges(14735 USD), the order(decreasing) is southeast, northeast, northwest and southwest, it shows that the east tend to have slightly higher average insurance cost than the west.
 
 ### Chart 1
 
