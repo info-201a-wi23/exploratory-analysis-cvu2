@@ -1,0 +1,86 @@
+---
+title: "group"
+output: html_document
+date: "2023-02-20"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+library("dplyr")
+library("stringr")
+library("ggplot2")
+library("scales")
+
+
+Insurance_df <- read.csv("~/insurance.csv", stringsAsFactors = F)
+
+#How are the charges different between females and males?
+
+##Chart 3: Differences in charges depending on sex (female & male)
+
+bp <- ggplot(data = Insurance_df) +
+geom_col(mapping = aes( x = sex,
+                        y = charges,
+                        fill = sex)) 
+                        
+bp + scale_fill_manual(values = c("#FFFEA6", "#6AC2FF"))+                    
+                      scale_y_continuous(labels = label_number_si())
+
+
+
+
+
+
+num_children <- Insurance_df %>% group_by(children) %>% summarize(num = n())
+
+pie_chart <- ggplot(data = num_children, aes(x="", y= num, fill=factor(children))) + 
+  geom_bar(width = 1, stat = "identity") +
+  coord_polar("y", start=0) +
+  ggtitle("Distribution of demographics with the number of children") + 
+ scale_fill_manual(values = c("#005fad", "#6fa5fc", "#a3c6ff", "#bad4ff", "#e3ecfa", "#f2f5fa"))
+
+For the last chart, we decide to use pie chart. The reason why I chose to do with a pie chart is that we had a question on "how is the demographic distributed with the number of children". Through the pie chart, it allows me to see how many people [demographic] have children. As the pie chart indicates simply the distributions of demographic with different factors in children from 0 to 5, we were able to recognize that people with none of child are occupying about 1250 in total, people with only one child are occupying 250, and people with two children are occupying 250 as well. Besides, we can see that people having more children are occupying less in the pie chart. 
+
+Here is the pie chart. 
+
+``````{r, echo = FALSE, code = readLines("pie_chart.R"), warning = F, message = F}
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
