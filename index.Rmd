@@ -89,17 +89,11 @@ One challenge for our group might be figuring out how to predict the cost of ins
 We asked our assigned TA, Ishita, in the AH section, for help to be approved for our chosen topic, and thank you for explaining other details we should keep in mind in this proposal assignment.
 
 ### Summary Information
+The insurance dataset includes 1338 individual insurance data with the features of their 
+age, sex, bmi, children, smoke or not, region, and charges. There are 662 observations of 
+female individuals and 676 observations of male individuals. Their charges of insurance ranges from 1121 to 63770.
 
-In our summary of information, we found the following several points of interest.
-First,defining by age, people between 55-64 have the highest average insurance charges, the cost is 15355 USD.
-
-Second, defining by sex, male have higher average insurance charges than famale which is 13957 USD.
-
-Third, defining by region, people in southeast region have the highest average insurance charges, the cost is 14735 USD.
-
-Forth, defining by number of children, people who have 3 children have the the highest average insurance charges, the cost is 15355 USD.
-
-Fifth, defining by smoker, people who smoke have higher average insurance cost than those who do not, the cost is 32050.
+In our summary of information, we found the following several points of interest. First,defining by age, people between 55-64 have the highest average insurance charges, the cost is 15355 USD. Second, defining by sex, male have higher average insurance charges than famale which is 13957 USD. Third, defining by region, people in southeast region have the highest average insurance charges, the cost is 14735 USD. Forth, defining by number of children, people who have 3 children have the the highest average insurance charges, the cost is 15355 USD. Fifth, defining by smoker, people who smoke have higher average insurance cost than those who do not, the cost is 32050.
 
 ### Table
 
@@ -115,13 +109,18 @@ The table is sorted by average charges(decreasing order), and it shows region(so
 
 Include a chart
 
-Describe why you chose this chart and what information it reveals
+For this chart, we use scatter plot to find the relationship between the age and charges, 
+and we can also see if people smoke or not can be an indicator to the charges.
+It is pretty clear that with the increase of the age, the charges increased slightly.
+No matter people smoke or not, the higher the age, the higher the charges, which can be 
+reflected directly by the two regression lines. Moreover, the emerald line which represent
+the individuals who smoke is significantly higher than the red line which represent the 
+individuals who do not smoke. This means that whether people smoke can be an indicator
+to the amount of charges.
 
-Here's an example of how to run an R script inside an RMarkdown file:
+Here is the script to create the chart.
 
-``````{r, echo = FALSE, code = readLines("chart1_example.R")}
-
-
+``````{r, echo = FALSE, code = readLines("Chart1.R")}
 
 ```
 

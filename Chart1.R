@@ -1,12 +1,9 @@
 library(ggplot2)
 library(dplyr)
 
-medical_data <- read.csv("/Users/yanjiarui/Desktop/insurance.csv")
+medical_data <- read.csv("https://raw.githubusercontent.com/stedy/Machine-Learning-with-R-datasets/master/insurance.csv")
 
-charge_children <- medical_data %>% group_by(children) %>%
-  summarise(charges = mean(charges))
-
-ggplot(charge_children, aes(children, charges, fill = children)) + 
-  geom_col() + 
-  ggtitle("Relationship between charges and numbers of children")
-
+ggplot(medical_data, aes(x=age, y=charges, color=smoker, shape=smoker)) +
+  geom_point()+
+  geom_smooth(method=lm, se=FALSE, fullrange=TRUE)+
+  ggtitle("Whether people smoke can be an indicator \n for the amount of charges")
