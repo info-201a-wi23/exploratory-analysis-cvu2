@@ -33,11 +33,15 @@ Medical cost personal data, Health insurance cost, Healthcare, Smoking, Gender &
 
 For our project, we decided to research how beneficiaries in health insurance are different and vary in each category including age, sex, BMI, the number of children, smoking, region, and charges billed by health insurance. In the United States, there are a huge number of people living without health insurance. Using data from Kaggle, we found datasets called “Medical Cost Personal Datasets” and we believed the datasets are interesting to analyze how each column is intersected and distributed in the medical insurance field. There are five main research questions we want to discover:
 
-How are the charges different between females and males?
-How are the charges different in age? 
-What are the average charges in each region? (southeast, southwest, northeast, and northwest)
-Can an indicator, ‘smoking’, whether a beneficiary smokes or not, affect the number of charges, then how and why is it?
-Can an indicator, ‘children’, whether having children or not, affect the individual medical cost, then how is it different and why?
+- How are the charges different between females and males?
+
+- How are the charges different in age? 
+
+- What are the average charges in each region? (southeast, southwest, northeast, and northwest)
+
+- Can an indicator, ‘smoking’, whether a beneficiary smokes or not, affect the number of charges, then how and why is it?
+
+- Can an indicator, ‘children’, whether having children or not, affect the individual medical cost, then how is it different and why?
 
 First, we want to look at different columns in datasets such as whether indicators, ‘sex’ and ‘age’, influence the charges that individual medical sots billed by health insurance companies. What affects the charges according to variance in the region beneficiaries live in? The dataset consists of four variables for the ‘region’ indicator including southeast, southwest, northeast, and northwest. Diverse options offer us insight into the trend and allow us to understand which region contains more people who pay more or fewer insurance fees and how they are distributed in America. We expect to discover these differences and variances from these personal health insurance datasets. 
 
@@ -69,6 +73,8 @@ Assuming you answer your research questions, briefly describe the expected or po
 One limitation is we don’t have specific economical data from certain regions (average medical cost level and average salary) which could influence the local insurance charges largely, so our conclusion on region questions may not be accurate and specific enough to make useful implications in the future.
 
 Another limitation can be the medical history as mentioned in the dataset. There might be more variables related to the insurance costs. If there can be more features included in this dataset, we might be able to get a more precise conclusion for the insurance cost and other medical information.
+
+Additionally, we do not know how this data was collected. Therefore raising some ethical concerns and biases amongst race, gender, and age. 
 
 One challenge for our group might be figuring out how to predict the cost of insurance by multiple variables. All of the variables might be associated with the insurance, but we haven’t learned to predict the charge by the regression line, so we will try to see if we can use the relation between columns to predict the insurance.
 
