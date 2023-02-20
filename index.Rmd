@@ -67,7 +67,13 @@ Possible limitations can be the medical histories of each observation. Without m
 
 ### Implications
 
-Assuming you answer your research questions, briefly describe the expected or possible implications for technologists, designers, and policymakers. (at least 150 words)
+In general, based on the answers to our questions listed above, we believe we can help technologists, designers, and policymakers to provide a better experience of insurance for people and build a better country.
+
+Based on the answers to sex, age, children, and regions we believe these answers can provide an overall recognition of insurance to technologists, designers, and policymakers, in order to help them to reconsider if their policy of insurance charges is suitable, so they can provide a better experience of insurance to people.
+
+For smoking, one ideal outcome is through both slightly adjusting insurance charges based on one’s smoking history and making limitations on smoking to the public, policymakers can reduce harmful effects on citizens’ health resulting from smoking and increase the general health conditions to all the citizens.
+
+For our conclusion to the questions we listed, we can conclude the facts of deciding insurance charges and post the conclusion to the public, so they can have a better recognition of deciding insurance charges and choose more suitable insurance.
 
 ### Limitations & Challenges
 One limitation is we don’t have specific economical data from certain regions (average medical cost level and average salary) which could influence the local insurance charges largely, so our conclusion on region questions may not be accurate and specific enough to make useful implications in the future.
@@ -84,7 +90,16 @@ We asked our assigned TA, Ishita, in the AH section, for help to be approved for
 
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
+In our summary of information, we found the following several points of interest.
+First,defining by age, people between 55-64 have the highest average insurance charges, the cost is 15355 USD.
+
+Second, defining by sex, male have higher average insurance charges than famale which is 13957 USD.
+
+Third, defining by region, people in southeast region have the highest average insurance charges, the cost is 14735 USD.
+
+Forth, defining by number of children, people who have 3 children have the the highest average insurance charges, the cost is 15355 USD.
+
+Fifth, defining by smoker, people who smoke have higher average insurance cost than those who do not, the cost is 32050.
 
 ### Table
 
