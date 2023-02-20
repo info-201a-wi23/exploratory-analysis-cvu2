@@ -1,0 +1,137 @@
+---
+title: "Exploratory Analysis"
+output: html_document
+---
+
+## Project title
+
+Healthcare Cost Research Analysis
+
+### Authors
+
+-Flora Lee / ghlee704@uw.edu
+
+-Cerelia Vu / cvu@uw.edu
+
+-Jerry Yan / jiaruiy1@uw.edu
+
+-Karl Ma / mengym3@uw.edu
+
+### Date
+
+Winter 2023
+
+### Abstract
+
+We are concerned with the costs medical aid opposes on people of all demographics. We believe this is an important topic to cover because universal health care is a globally debated issue for years. To address this argument, we plan to analyze health insurance costs with regard to age, gender, region, etc.
+
+### Keywords
+
+Medical cost personal data, Health insurance cost, Healthcare, Smoking, Gender & Age
+
+### Introduction  
+
+For our project, we decided to research how beneficiaries in health insurance are different and vary in each category including age, sex, BMI, the number of children, smoking, region, and charges billed by health insurance. In the United States, there are a huge number of people living without health insurance. Using data from Kaggle, we found datasets called “Medical Cost Personal Datasets” and we believed the datasets are interesting to analyze how each column is intersected and distributed in the medical insurance field. There are five main research questions we want to discover:
+
+- How are the charges different between females and males?
+
+- How are the charges different in age? 
+
+- What are the average charges in each region? (southeast, southwest, northeast, and northwest)
+
+- Can an indicator, ‘smoking’, whether a beneficiary smokes or not, affect the number of charges, then how and why is it?
+
+- Can an indicator, ‘children’, whether having children or not, affect the individual medical cost, then how is it different and why?
+
+First, we want to look at different columns in datasets such as whether indicators, ‘sex’ and ‘age’, influence the charges that individual medical sots billed by health insurance companies. What affects the charges according to variance in the region beneficiaries live in? The dataset consists of four variables for the ‘region’ indicator including southeast, southwest, northeast, and northwest. Diverse options offer us insight into the trend and allow us to understand which region contains more people who pay more or fewer insurance fees and how they are distributed in America. We expect to discover these differences and variances from these personal health insurance datasets. 
+
+
+### Related Work  
+
+Health insurance costs have been a debate in The United States for ages. Unlike in other countries, health care is not free or provided by the government. Why is healthcare really so expensive in the United States? Harvard University explains that one of the largest components of the high cost of healthcare is [the cost of healthcare administration ](https://www.harvardmagazine.com/2020/05/feature-forum-costliest-health-care). The U.S. spends over $3.5 trillion dollars alone on healthcare, and one-third of the costs go towards administration. The U.S. is one of the only [“profit-motivated healthcare systems in the world”](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5394555/) as the National Center for Biotechnology Information, a branch of the National Institutes of Health, explains. With the amount of funding and money the healthcare system has, the costs U.S. citizens face are due to the political and business misalignments higher institutions impose. Resulting in the mass facing these financial consequences. Not only are healthcare and health insurance essential, but it’s also driving factors for employment. When the costs rise, it has consequences for the working class according to this article from the Center for American Progress, a public policy research and advocacy. [People suffer under the expenses of a capitalistic healthcare system](https://www.americanprogress.org/article/health-insurance-costs-are-squeezing-workers-and-employers/). The real medical costs we are analyzing will help us explain if there are really injustices with the American Healthcare system. 
+
+References
+
+Branning, G., & Vater, M. (2016, November). Healthcare spending: Plenty of blame to go around. American health & drug benefits. Retrieved February 3, 2023, from https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5394555/
+
+Cutler, D. (2020, April 17). The World's Costliest Health Care. Harvard Magazine. Retrieved February 3, 2023, from https://www.harvardmagazine.com/2020/05/feature-forum-costliest-health-care
+
+President, J. C. V., Cusick, J., President, V., Shepherd Director, M., Shepherd, M., Director, Director, E. L. A., Lofgren, E., Director, A., Rapfogel, N., Waldrop, T., Rosenthal, J., Manser, K., Williamson, M. W., Khattar, R., & Christianson, A. (2022, July 28). Health insurance costs are squeezing workers and employers. Center for American Progress. Retrieved February 3, 2023, from https://www.americanprogress.org/article/health-insurance-costs-are-squeezing-workers-and-employers/
+
+### The Dataset
+We found the data in Kaggle. Here is the link: Medical Cost Personal Datasets | Kaggle. The data was collected by Miri Choi, a graduate student from the University of Seoul. All of the data is from the public domain, according to the introduction by Miri. The data was collected because the dataset in a book is not available online unless you buy the book and create an account.
+
+There are seven columns and 1338 rows in this dataset. The features include age, sex, body mass index, children, smoking, region, and charges. For the ethical question, we were considering the privacy of the data owners and the use of the data. We think working with this dataset will not affect any ethical problems. First, the data is collected from the public domain, and none of the personal information of each observation will be leaked. Second, our intention is to learn something from the dataset about medical costs and insurance by analyzing this dataset, and our outcome will be some useful conclusions related to insurance. Therefore, we don’t think there should be too much consideration about the ethical questions or questions of power.
+
+Possible limitations can be the medical histories of each observation. Without medical histories, it is hard to draw a clear analysis of the cost of insurance.
+
+### Implications
+
+In general, based on the answers to our questions listed above, we believe we can help technologists, designers, and policymakers to provide a better experience of insurance for people and build a better country.
+
+Based on the answers to sex, age, children, and regions we believe these answers can provide an overall recognition of insurance to technologists, designers, and policymakers, in order to help them to reconsider if their policy of insurance charges is suitable, so they can provide a better experience of insurance to people.
+
+For smoking, one ideal outcome is through both slightly adjusting insurance charges based on one’s smoking history and making limitations on smoking to the public, policymakers can reduce harmful effects on citizens’ health resulting from smoking and increase the general health conditions to all the citizens.
+
+For our conclusion to the questions we listed, we can conclude the facts of deciding insurance charges and post the conclusion to the public, so they can have a better recognition of deciding insurance charges and choose more suitable insurance.
+
+### Limitations & Challenges
+One limitation is we don’t have specific economical data from certain regions (average medical cost level and average salary) which could influence the local insurance charges largely, so our conclusion on region questions may not be accurate and specific enough to make useful implications in the future.
+
+Another limitation can be the medical history as mentioned in the dataset. There might be more variables related to the insurance costs. If there can be more features included in this dataset, we might be able to get a more precise conclusion for the insurance cost and other medical information.
+
+Additionally, we do not know how this data was collected. Therefore raising some ethical concerns and biases amongst race, gender, and age. 
+
+One challenge for our group might be figuring out how to predict the cost of insurance by multiple variables. All of the variables might be associated with the insurance, but we haven’t learned to predict the charge by the regression line, so we will try to see if we can use the relation between columns to predict the insurance.
+
+### Acknowledgements
+
+We asked our assigned TA, Ishita, in the AH section, for help to be approved for our chosen topic, and thank you for explaining other details we should keep in mind in this proposal assignment.
+
+### Summary Information
+The insurance dataset includes 1338 individual insurance data with the features of their 
+age, sex, bmi, children, smoke or not, region, and charges. There are 662 observations of 
+female individuals and 676 observations of male individuals. Their charges of insurance ranges from 1121 to 63770.
+
+In our summary of information, we found the following several points of interest. First,defining by age, people between 55-64 have the highest average insurance charges, the cost is 15355 USD. Second, defining by sex, male have higher average insurance charges than famale which is 13957 USD. Third, defining by region, people in southeast region have the highest average insurance charges, the cost is 14735 USD. Forth, defining by number of children, people who have 3 children have the the highest average insurance charges, the cost is 15355 USD. Fifth, defining by smoker, people who smoke have higher average insurance cost than those who do not, the cost is 32050.
+
+### Table
+
+``````{r, echo = FALSE, code = readLines("aggregate_table.R")}
+kable(region_table)
+
+
+```
+This table compares the averages insurance costs by regions, and answer the question(What are the average charges in each region?) we listed above.
+The table is sorted by average charges(decreasing order), and it shows region(southeast) has the highest average insurance charges(14735 USD), the order(decreasing) is southeast, northeast, northwest and southwest, it shows that the east tend to have slightly higher average insurance cost than the west.
+
+### Chart 1
+
+Include a chart
+
+For this chart, we use scatter plot to find the relationship between the age and charges, 
+and we can also see if people smoke or not can be an indicator to the charges.
+It is pretty clear that with the increase of the age, the charges increased slightly.
+No matter people smoke or not, the higher the age, the higher the charges, which can be 
+reflected directly by the two regression lines. Moreover, the emerald line which represent
+the individuals who smoke is significantly higher than the red line which represent the 
+individuals who do not smoke. This means that whether people smoke can be an indicator
+to the amount of charges.
+
+Here is the script to create the chart.
+
+``````{r, echo = FALSE, code = readLines("Chart1.R")}
+
+```
+
+### Chart 2
+
+Include a chart
+
+Describe why you chose this chart and what information it reveals
+
+### Chart 3
+
+Include a chart
+
+Describe why you chose this chart and what information it reveals
