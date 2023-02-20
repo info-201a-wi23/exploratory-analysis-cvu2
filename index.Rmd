@@ -31,11 +31,28 @@ Medical cost personal data, Health insurance cost, Healthcare, Smoking, Gender &
 
 ### Introduction  
 
+For our project, we decided to research how beneficiaries in health insurance are different and vary in each category including age, sex, BMI, the number of children, smoking, region, and charges billed by health insurance. In the United States, there are a huge number of people living without health insurance. Using data from Kaggle, we found datasets called “Medical Cost Personal Datasets” and we believed the datasets are interesting to analyze how each column is intersected and distributed in the medical insurance field. There are five main research questions we want to discover:
+
+How are the charges different between females and males?
+How are the charges different in age? 
+What are the average charges in each region? (southeast, southwest, northeast, and northwest)
+Can an indicator, ‘smoking’, whether a beneficiary smokes or not, affect the number of charges, then how and why is it?
+Can an indicator, ‘children’, whether having children or not, affect the individual medical cost, then how is it different and why?
+
+First, we want to look at different columns in datasets such as whether indicators, ‘sex’ and ‘age’, influence the charges that individual medical sots billed by health insurance companies. What affects the charges according to variance in the region beneficiaries live in? The dataset consists of four variables for the ‘region’ indicator including southeast, southwest, northeast, and northwest. Diverse options offer us insight into the trend and allow us to understand which region contains more people who pay more or fewer insurance fees and how they are distributed in America. We expect to discover these differences and variances from these personal health insurance datasets. 
 
 
 ### Related Work  
 
-Describe your topic and related work in this space. You must include 3 citations to related work (URLs to similar work, high quality articles from the popular press, research papers, etc. ) Please use a standard citation style of your choice. (at least 200 words)
+Health insurance costs have been a debate in The United States for ages. Unlike in other countries, health care is not free or provided by the government. Why is healthcare really so expensive in the United States? Harvard University explains that one of the largest components of the high cost of healthcare is [the cost of healthcare administration ](https://www.harvardmagazine.com/2020/05/feature-forum-costliest-health-care). The U.S. spends over $3.5 trillion dollars alone on healthcare, and one-third of the costs go towards administration. The U.S. is one of the only [“profit-motivated healthcare systems in the world”](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5394555/) as the National Center for Biotechnology Information, a branch of the National Institutes of Health, explains. With the amount of funding and money the healthcare system has, the costs U.S. citizens face are due to the political and business misalignments higher institutions impose. Resulting in the mass facing these financial consequences. Not only are healthcare and health insurance essential, but it’s also driving factors for employment. When the costs rise, it has consequences for the working class according to this article from the Center for American Progress, a public policy research and advocacy. [People suffer under the expenses of a capitalistic healthcare system](https://www.americanprogress.org/article/health-insurance-costs-are-squeezing-workers-and-employers/). The real medical costs we are analyzing will help us explain if there are really injustices with the American Healthcare system. 
+
+References
+
+Branning, G., & Vater, M. (2016, November). Healthcare spending: Plenty of blame to go around. American health & drug benefits. Retrieved February 3, 2023, from https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5394555/
+
+Cutler, D. (2020, April 17). The World's Costliest Health Care. Harvard Magazine. Retrieved February 3, 2023, from https://www.harvardmagazine.com/2020/05/feature-forum-costliest-health-care
+
+President, J. C. V., Cusick, J., President, V., Shepherd Director, M., Shepherd, M., Director, Director, E. L. A., Lofgren, E., Director, A., Rapfogel, N., Waldrop, T., Rosenthal, J., Manser, K., Williamson, M. W., Khattar, R., & Christianson, A. (2022, July 28). Health insurance costs are squeezing workers and employers. Center for American Progress. Retrieved February 3, 2023, from https://www.americanprogress.org/article/health-insurance-costs-are-squeezing-workers-and-employers/
 
 ### The Dataset
 
@@ -74,6 +91,9 @@ Describe why you chose this chart and what information it reveals
 Here's an example of how to run an R script inside an RMarkdown file:
 
 ``````{r, echo = FALSE, code = readLines("chart1_example.R")}
+
+
+
 ```
 
 ### Chart 2
