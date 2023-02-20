@@ -132,6 +132,10 @@ Describe why you chose this chart and what information it reveals
 
 ### Chart 3
 
-Include a chart
+For the last chart, we decide to use pie chart. The reason why I chose to do with a pie chart is that we had a question on "how is the demographic distributed with the number of children". Through the pie chart, it allows me to see how many people [demographic] have children. As the pie chart indicates simply the distributions of demographic with different factors in children from 0 to 5, we were able to recognize that people with none of child are occupying about 1250 in total, people with only one child are occupying 250, and people with two children are occupying 250 as well. Besides, we can see that people having more children are occupying less in the pie chart. 
 
-Describe why you chose this chart and what information it reveals
+Here is the pie chart. 
+
+``````{r, echo = FALSE, code = readLines("Chart 3.R")}
+
+```
