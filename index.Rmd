@@ -107,8 +107,6 @@ The table is sorted by average charges(decreasing order), and it shows region(so
 
 ### Chart 1
 
-Include a chart
-
 For this chart, we use scatter plot to find the relationship between the age and charges, 
 and we can also see if people smoke or not can be an indicator to the charges.
 It is pretty clear that with the increase of the age, the charges increased slightly.
@@ -120,7 +118,7 @@ to the amount of charges.
 
 Here is the script to create the chart.
 
-``````{r, echo = FALSE, code = readLines("Chart1.R")}
+``````{r, echo = FALSE, code = readLines("Chart1.R"), warning = F, message = F}
 
 ```
 
@@ -136,6 +134,6 @@ For the last chart, we decide to use pie chart. The reason why I chose to do wit
 
 Here is the pie chart. 
 
-``````{r, echo = FALSE, code = readLines("Chart 3.R")}
+``````{r, echo = FALSE, code = readLines("Chart 3.R"), warning = F, message = F}
 
 ```
