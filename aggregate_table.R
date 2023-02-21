@@ -1,5 +1,6 @@
-library(tidyverse)
+
 library(dplyr)
+library(knitr)
 insurance_data <- read.csv('https://raw.githubusercontent.com/stedy/Machine-Learning-with-R-datasets/master/insurance.csv')
 insurance_data2 <- subset(insurance_data, select = c(region, charges))
 region_table <-insurance_data2 %>% 
@@ -7,6 +8,5 @@ region_table <-insurance_data2 %>%
   summarize(average_charges = round(mean(charges),0))
 
 region_table <- region_table%>% arrange(desc(average_charges))
+kable(region_table)
 
-
-view(region_table)

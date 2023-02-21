@@ -97,8 +97,8 @@ In our summary of information, we found the following several points of interest
 
 ### Table
 
-``````{r, echo = FALSE, code = readLines("aggregate_table.R")}
-kable(region_table)
+``````{r, echo = FALSE, code = readLines("aggregate_table.R"), message = F}
+
 
 
 ```
