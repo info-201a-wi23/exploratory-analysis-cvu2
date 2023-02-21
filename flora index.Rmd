@@ -38,11 +38,7 @@ geom_col(mapping = aes( x = sex,
                         fill = sex)) 
                         
 bp + scale_fill_manual(values = c("#FFFEA6", "#6AC2FF"))+                    
-                      scale_y_continuous(labels = label_number_si())
-
-
-
-
+                      scale_y_continuous(labels = label_number_si()
 
 
 num_children <- Insurance_df %>% group_by(children) %>% summarize(num = n())
