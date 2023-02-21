@@ -124,9 +124,13 @@ Here is the script to create the chart.
 
 ### Chart 2
 
-Include a chart
+``````{r, echo = FALSE, code = readLines("Chart_2.R"), warning = F, message = F}
 
-Describe why you chose this chart and what information it reveals
+```
+
+This chart answers our research question of “how are charges different between females and males”? Though this does not account for gender, and only sex. We believed that medical costs associated with females should be higher since women go through hospitalization for childbirth and men cannot. Medical costs could be associated with sex-only specific issues. 
+
+The bar graph above displays the two sexes: female and male, within the dataset of medical costs comparing the two in the amount of average amount of charges per sex. There is a slightly higher charge for males compared to females of about $2000. Therefore, on average we can conclude that males pay more medical fees than females regardless of sex-only specific issues. 
 
 ### Chart 3
 
